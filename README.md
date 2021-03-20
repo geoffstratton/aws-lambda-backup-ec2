@@ -19,7 +19,7 @@ Prerequisites
    + ec2:DescribeVolumes
    + ec2:CreateSnapshot
    + ec2:DescribeSnapshots
-* If using CloudWatch, your Lambda function also needs the usual CloudWatch Logs role.
+* Use the usual CloudWatch Logs role for logging.
 * A cron job in CloudWatch to invoke the Lambda function at the desired times.
 * Ensure that your EC2 instances to be backed up have a tag like "backup=True". You can of course modify the script to look for a different parameter. 
 
